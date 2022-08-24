@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(140deg, #F3E5F5, #AB47BC);
+}
+
+.container svg {
+  transform: scale(2);
+}
+
+#olhos,
+#globosolhos {
+  animation: olhos 5s infinite ease-in-out;
+}
+
+#cabelo,
+#luz,
+#luzclara {
+  animation: olhos 5s infinite ease-in-out;
+}
+
+#orelha {
+  animation: orelha 5s infinite ease-in-out;
+}
+
+#nariz {
+  animation: nariz 5s infinite ease-in-out;
+}
+
+#boca {
+  animation: boca 5s infinite ease-in-out;
+}
+
+#sobrancelhas {
+  animation: sobrancelhas 5s infinite ease-in-out;
+}
+
+#iris {
+  animation: iris 5s infinite ease-in-out;
+}
+
+#cabeca {
+  animation: floating 5s infinite ease-in-out;
+}
+
+@keyframes floating {
+  25% {
+    transform: translate(2px, -1px);
+  }
+
+  75% {
+    transform: translate(-2px, 1px);
+  }
+}
+
+@keyframes boca {
+  50% {
+    transform: translate(5px, -2px);
+  }
+}
+
+@keyframes nariz {
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes orelha {
+  50% {
+    transform: translateX(-3px);
+  }
+}
+
+@keyframes olhos {
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes sobrancelhas {
+  50% {
+    transform: translate(5px, 5px);
+  }
+}
+
+@keyframes iris {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container svg {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container svg {
+    transform: scale(3);
+  }
+}
